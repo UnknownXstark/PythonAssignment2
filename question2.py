@@ -4,7 +4,7 @@ def snake_game(grid, start, directions, food):
     rows, cols = grid
     moves = {"U": (1,0), "D": (-1,0), "R": (0,1), "L": (0,-1)}
 
-    snake = deque([[start]])
+    snake = deque([start])
     body = set([start])
 
     for d in directions:
